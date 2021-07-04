@@ -1926,64 +1926,65 @@ const tabelle = {
         4.1
     ]
 }
+// comments hier reinpacken 
 
-let dachfläche = 150;
-let abflussBeiwert = 0.9;
+let dachfläche = document.getElementById("dachflaeche").value;
+let abflussBeiwert = document.getElementById("dachart").value;
+let plz = document.getElementById("plz-input").value.toString().substring(0, 2);
+
+let bodendurchlässigkeit = document.getElementById("bodenart").value;
 
 let undurchlässigeFläche = dachfläche * abflussBeiwert;
-let empfohlenderSchacht;
+let empfohlenerSchacht;
 
+const start = () => {
 const findBest = (wert) => {
     const maxUndurchlässigeFlächen = [40, 140, 190, 200, 320, 500];
     let passend;
-    
+
     for (const schacht of maxUndurchlässigeFlächen) {
         if (undurchlässigeFläche <= schacht) {
             passend = schacht;
             break
         }
     }
-
-// switch!
-    if (passend === 40) {
-        empfohlenderSchacht = 140;
-    } else if (passend === 140) {
-        empfohlenderSchacht = 500;
-    } else if (passend === 190) {
-        empfohlenderSchacht = 900;
-    } else if (passend === 200) {
-        empfohlenderSchacht = 950;
-    } else if (passend === 320) {
-        empfohlenderSchacht = 1000;
-    } else if (passend === 500) {
-        empfohlenderSchacht = 2000;
+    switch (passend) {
+        case 40:
+            empfohlenerSchacht = 140; 
+            break; 
+        case 140:
+            empfohlenerSchacht = 500;
+            break; 
+        case 190:
+            empfohlenerSchacht = 900;
+            break; 
+        case 200:
+            empfohlenerSchacht = 950;
+            break; 
+        case 320:
+            empfohlenerSchacht = 1000;
+            break; 
+        case 500:
+            empfohlenerSchacht = 2000;  
+            break; 
     }
-    console.log(passend)
-    console.log(`Der empfohlene Schacht für Ihre Dachfläche ist folgendes Modell: ${empfohlenderSchacht}l`)
 }
 findBest(undurchlässigeFläche);
 
-
-let bodendurchlässigkeit = 0.0001; // je nach Boden!!!
-
-const schachtVolumen = empfohlenderSchacht / 1000;
+const schachtVolumen = empfohlenerSchacht / 1000;
 
 const rigolenBreite = 3;
-const rigolenHöhe = schacht[empfohlenderSchacht].rigolenHöhe / 100;
+const rigolenHöhe = schacht[empfohlenerSchacht].rigolenHöhe / 100;
 
-const schachtHöhe = schacht[empfohlenderSchacht].schachtHöhe / 100;
-const zulaufUnten = schacht[empfohlenderSchacht].zulaufUnten / 100;
-const zulaufDurchmesser = schacht[empfohlenderSchacht].zulaufDurchmesser / 100;
+const schachtHöhe = schacht[empfohlenerSchacht].schachtHöhe / 100;
+const zulaufUnten = schacht[empfohlenerSchacht].zulaufUnten / 100;
+const zulaufDurchmesser = schacht[empfohlenerSchacht].zulaufDurchmesser / 100;
 const grubenTiefe = ((+schachtHöhe-zulaufUnten+(zulaufDurchmesser / 10)) + rigolenHöhe).toFixed(2);
 
 const speicherkoeffizient = 0.35;
 const zuschlagfaktor = 1.1;
 
 
-// let rigolenLänge; 
-// let rigolenVolumen;
-
-//Irgendwo ist die Berechnung falsch
 const calc = (minute, regen) => {
     const ol = undurchlässigeFläche * Math.pow(10, -7);
     const ul = rigolenBreite * rigolenHöhe * speicherkoeffizient / (60 * zuschlagfaktor);
@@ -1992,17 +1993,8 @@ const calc = (minute, regen) => {
     const rigolenLänge = (ol * regen) / (ul / minute + ur);
     const rigolenVolumen = rigolenLänge * rigolenBreite * rigolenHöhe;
 
-    // console.log(ol)
-    // console.log(ul)
-    // console.log(ur)
-    // console.log(rigolenLänge)
-    // console.log(rigolenVolumen)
-
     return [rigolenLänge.toFixed(2), rigolenVolumen.toFixed(2)]
 }
-
-
-let plz = "01";
 
 const minuten = [5, 10, 15, 20, 30, 45, 60, 90, 120, 180, 240, 360, 540, 720, 1080, 1440, 2880]
 const ergebnisse = [];
@@ -2024,8 +2016,7 @@ const drainageKies = (kiesVolumen * 1.75).toFixed(1);
 const geotextil = Math.floor(((2 * rigolenBreite * rigolenLänge + 2 * rigolenHöhe * rigolenBreite + 2 * rigolenHöhe * rigolenLänge)* 1.2) / 2.5) * 2.5;
 
 
-
-document.getElementById("schacht").innerText = `Empfohlene Schachtgröße: ${empfohlenderSchacht}l`;
+document.getElementById("schacht").innerText = `Empfohlene Schachtgröße: ${empfohlenerSchacht}l`;
 document.getElementById("geotextil").innerText = `Geotextil: ${geotextil}m`;
 
 document.getElementById("drainagekies").innerText = `Drainagekies 16/32: ${drainageKies}T`;
@@ -2033,4 +2024,35 @@ document.getElementById("drainagekies").innerText = `Drainagekies 16/32: ${drain
 document.getElementById("gruben-länge").innerText = `Länge: ${rigolenLänge}m`;
 document.getElementById("gruben-breite").innerText = `Breite: ${rigolenBreite}m`;
 document.getElementById("gruben-tiefe").innerText = `Tiefe: ${grubenTiefe}m`;
+}
+start();
+
+
+//why?
+document.getElementById("dachflaeche").onchange = function() {
+    dachfläche = document.getElementById("dachflaeche").value;
+    undurchlässigeFläche = dachfläche * abflussBeiwert;
+
+    // console.log(dachfläche);
+    // console.log(document.getElementById("dachflaeche").value)
+    // console.log(undurchlässigeFläche)
+    start()
+};
+//why erst nach dem das Feld nicht mehr im Fokus ist?
+document.getElementById("plz-input").onchange = function() {
+    plz = document.getElementById("plz-input").value.toString().substring(0, 2);
+    start()
+};
+document.getElementById("dachart").onchange = function() {
+    abflussBeiwert = document.getElementById("dachart").value;
+    undurchlässigeFläche = dachfläche * abflussBeiwert;
+    // console.log(abflussBeiwert)
+    start();
+}
+document.getElementById("bodenart").onchange = function() {
+    bodendurchlässigkeit = document.getElementById("bodenart").value;
+    // console.log(bodendurchlässigkeit)
+    start();
+}
+
 

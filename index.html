@@ -7,6 +7,40 @@
     <title>Sickerschacht</title>
 </head>
 <body>
+    <h3>Dachfläche</h3>
+    <input id="dachflaeche" class="number-input" type="number" name="nutztage" placeholder="Dachfläche..." pattern="[0-9]*" inputmode="numeric" value="150" min="0" autocomplete="off">
+    <span class="fläche">m<sup>2</sup></span>
+    <h3>Postleitzahl</h3>
+    <input id="plz-input" class="number-input" type="number" name="postleitzahl" pattern="[0-9]*" inputmode="numeric" value="08521" min="0" autocomplete="off">
+    <h3>Dachart</h3>
+    <select id="dachart" class="dachartselect">
+        <option value="0.95">Schrägdach Metall, Glas, Schiefer, Faserzement</option>
+        <option value="0.9">Schrägdach Ziegel, Dachpappe</option>
+        <option value="0.95">Flachdach Metall, Glas, Faserzement</option>
+        <option value="0.9">Flachdach Dachpappe</option>
+        <option value="0.7">Flachdach Kies</option>
+        <option value="0.5">Gründach humusiert < 10 cm Aufbau</option>
+        <option value="0.3">Gründach humusiert > 10 cm Aufbau</option>
+        <option value="0.9">Asphalt, fugenloser Beton</option>
+        <option value="0.75">Pflaster mit dichten Fugen</option>
+        <option value="0.5">Pflaster mit offenen Fugen</option>
+        <option value="0.25">Verbundsteine mit Fugen, Sickersteine</option>
+      </select>
+      <h3>kf-Wert bekannt?</h3>
+      <select>
+          <option value="ja">ja</option>
+          <option value="nein">nein</option>
+      </select>
+      <input type="number" pattern="[0-9]*">
+      <h3>Bodenart</h3>
+      <p>(Nur nötig, wenn kf-Wert unbekannt)</p>
+      <select id="bodenart" class="dachartselect">
+        <option value="0.0005">Grobsand</option>
+        <option value="0.0001">Mittelsand</option>
+        <option value="0.00005">Feinsand</option>
+        <option value="0.00001">lehmiger Sand</option>
+      </select>
+
     <h3>Unsere Produkte:</h3>
     <p id="schacht">Schacht</p>
     <p id="geotextil">Geotextil</p>
