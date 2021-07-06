@@ -1,23 +1,29 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sickerschacht</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sickerschacht</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://use.typekit.net/olq6lfv.css">
 </head>
+
 <body>
-    <h3>Dachfläche</h3>
-    <input id="dachflaeche" class="number-input" type="number" name="nutztage" placeholder="Dachfläche..." pattern="[0-9]*" inputmode="numeric" value="150" min="0" autocomplete="off">
-    <span class="fläche">m<sup>2</sup></span>
-    <h3>Postleitzahl</h3>
-    <input id="plz-input" class="number-input" type="number" name="postleitzahl" pattern="[0-9]*" inputmode="numeric" value="08521" min="0" autocomplete="off">
-    <h3>Dachart</h3>
-    <select id="dachart" class="dachartselect">
+  <div class="rechner">
+    <div class="all-inputs">
+      <div class="number-input-group">
+        <input id="dachflaeche" class="number-input" type="number" placeholder="Dachfläche..." pattern="[0-9]*"
+          inputmode="numeric" value="" min="0" autocomplete="off">
+        <span class="fläche">m<sup>2</sup></span>
+      </div>
+
+      <select id="dachart" class="dachartselect">
         <option value="0.95">Schrägdach Metall, Glas, Schiefer, Faserzement</option>
         <option value="0.9">Schrägdach Ziegel, Dachpappe</option>
         <option value="0.95">Flachdach Metall, Glas, Faserzement</option>
-        <option value="0.9">Flachdach Dachpappe</option>
+        <option value="0.9" selected="selected">Flachdach Dachpappe</option>
         <option value="0.7">Flachdach Kies</option>
         <option value="0.5">Gründach humusiert < 10 cm Aufbau</option>
         <option value="0.3">Gründach humusiert > 10 cm Aufbau</option>
@@ -26,34 +32,54 @@
         <option value="0.5">Pflaster mit offenen Fugen</option>
         <option value="0.25">Verbundsteine mit Fugen, Sickersteine</option>
       </select>
-      <h3>kf-Wert bekannt?</h3>
-      <select>
+      <div class="input-text-group">
+        <p>kf-Wert bekannt?</p>
+        <select id="kf-wert-bekannt" class="ja-nein">
           <option value="ja">ja</option>
           <option value="nein">nein</option>
-      </select>
-      <input type="number" pattern="[0-9]*">
-      <h3>Bodenart</h3>
-      <p>(Nur nötig, wenn kf-Wert unbekannt)</p>
+        </select>
+        <input id="kf-wert-input" class="number-input" type="number" pattern="[0-9]*" inputmode="numeric" value="0.0005"
+          min="0" autocomplete="off">
+      </div>
+    
       <select id="bodenart" class="dachartselect">
         <option value="0.0005">Grobsand</option>
         <option value="0.0001">Mittelsand</option>
         <option value="0.00005">Feinsand</option>
         <option value="0.00001">lehmiger Sand</option>
       </select>
+      <p class="kf-unbekannt">(Nur nötig, wenn kf-Wert unbekannt)</p>
+      
+      <div class="plz">
+        <span id="plz-text">PLZ:</span>
+        <input id="plz-input" class="number-input" type="number" name="postleitzahl" pattern="[0-9]*" inputmode="numeric" value="19057" min="0" autocomplete="off">
+      </div>
 
-    <h3>Unsere Produkte:</h3>
-    <p id="schacht">Schacht</p>
-    <p id="geotextil">Geotextil</p>
-
-    <h3>Produkte Bauseits zu stellen:</h3>
-    <p id="drainagekies">Drainagekies 16/32</p>
-
-    <h3>Grubenmaße:</h3>
-    <p id="gruben-länge">Länge</p>
-    <p id="gruben-breite">Breite</p>
-    <p id="gruben-tiefe">Tiefe</p>
-
-
-    <script type="text/javascript" src="schacht.js"></script>
+      <div class="input-text-group">
+        <p>Sollen nahe Gebäude möglichst geschützt sein?</p>
+        <select id="haftungsausschluss" class="ja-nein">
+          <option value="ja">ja</option>
+          <option value="nein" selected="selected">nein</option>
+        </select>
+      </div>
+    </div>
+  
+    <div class="results">
+      <p class="input-description">Unsere Produkte:</p>
+      <p id="schacht">Empfohlene Schachtgröße:</p>
+      <p><span id="geotextil">Geotextil</span><span>m<sup>2</sup></span></p>
+    
+      <p class="input-description">Bauseits zu stellen:</p>
+      <p id="drainagekies">Drainagekies 16/32:</p>
+    
+      <p class="input-description">Grubenmaße:</p>
+      <p id="gruben-länge">Länge:</p>
+      <p id="gruben-breite">Breite:</p>
+      <p id="gruben-tiefe">Tiefe:</p>
+    </div>
+  </div>
+  
+  <script type="text/javascript" src="schacht.js"></script>
 </body>
+
 </html>
