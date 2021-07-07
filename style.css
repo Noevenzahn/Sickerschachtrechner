@@ -42,7 +42,10 @@
     height: 60px;
     padding: 0 15px;
     background-color: var(--blue);
-  }
+}
+.number-input::placeholder {
+  color: #8B96B5;
+}
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
     -webkit-appearance: none;
@@ -76,19 +79,53 @@ input {
     background-color: var(--blue);
   
     font-family: neue-kabel, sans-serif;
-    font-size: 30px;
+    font-size: 1.7rem;
     color: #fff;
     border: none;
     box-sizing: border-box;
 }
+select {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
+.select-wrapper,
+.select-wrapper-small {
+    position: relative;
+}
+.select-wrapper::after {
+    content: '';
+    background-color: var(--blue);
+    width: 40px;
+    height: 60px;
+    position: absolute;
+    right: 0;
+    top: 12px;
+}
+.select-wrapper::before,
+.select-wrapper-small::before {
+    content: '';
+    position: absolute;
+    top: 34px;
+    right: 15px;
+    width: 8px;
+    height: 8px;
+    border-bottom: 3px solid #fff;
+    border-left: 3px solid #fff;
+    transform: rotate(315deg);
+    z-index: 999;
+}
+.select-wrapper-small::before {
+    top: 22px;
+}
 .ja-nein {
     width: 100px;
     height: 60px;
-    padding: 0 15px 0 15px;
+    padding: 0 15px 0 10px;
     background-color: var(--blue);
   
     font-family: neue-kabel, sans-serif;
-    font-size: 30px;
+    font-size: 1.7rem;
     color: #fff;
     border: none;
     box-sizing: border-box;
