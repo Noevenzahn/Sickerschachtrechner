@@ -3820,7 +3820,7 @@ const haftungsausschluss = () => {
 }
 haftungsausschluss();
 
-document.getElementById("haftungsausschluss").onchange = function() {
+document.getElementById("haftungsausschluss").oninput = function() {
     haftungsausschluss();
     start();
     console.log(tabelle)
@@ -3927,26 +3927,26 @@ document.getElementById("gruben-tiefe").innerText = `Tiefe: ${grubenTiefe}m`;
 start();
 
 
-document.getElementById("dachflaeche").onchange = function() {
+document.getElementById("dachflaeche").oninput = function() {
     dachfläche = document.getElementById("dachflaeche").value;
     undurchlässigeFläche = dachfläche * abflussBeiwert;
     start()
 };
 //why erst nach dem das Feld nicht mehr im Fokus ist?
-document.getElementById("plz-input").onchange = function() {
+document.getElementById("plz-input").oninput = function() {
     plz = document.getElementById("plz-input").value.toString().substring(0, 2);
     start()
 };
-document.getElementById("dachart").onchange = function() {
+document.getElementById("dachart").oninput = function() {
     abflussBeiwert = document.getElementById("dachart").value;
     undurchlässigeFläche = dachfläche * abflussBeiwert;
     start();
 }
-document.getElementById("bodenart").onchange = function() {
+document.getElementById("bodenart").oninput = function() {
     bodendurchlässigkeit = document.getElementById("bodenart").value;
     start();
 }
-document.getElementById("kf-wert-input").onchange = function() {
+document.getElementById("kf-wert-input").oninput = function() {
     bodendurchlässigkeit = document.getElementById("kf-wert-input").value;
     start();
 }
@@ -3965,7 +3965,7 @@ const kfWert = () => {
 }
 kfWert();
 
-document.getElementById("kf-wert-bekannt").onchange = function() {
+document.getElementById("kf-wert-bekannt").oninput = function() {
     kfWert();
     start();
 }
