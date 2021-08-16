@@ -3872,7 +3872,8 @@ findBest(undurchlässigeFläche);
 
 const schachtVolumen = empfohlenerSchacht / 1000;
 
-const rigolenBreite = 3;
+const rigolenBreite = document.getElementById("breite-input").value;
+
 const rigolenHöhe = schacht[empfohlenerSchacht].rigolenHöhe / 100;
 
 const schachtHöhe = schacht[empfohlenerSchacht].schachtHöhe / 100;
@@ -3950,6 +3951,10 @@ document.getElementById("kf-wert-input").oninput = function() {
     bodendurchlässigkeit = document.getElementById("kf-wert-input").value;
     start();
 }
+document.getElementById("breite-input").oninput = function() {
+    rigolenBreite = document.getElementById("breite-input").value;
+    start();
+}
 
 const kfWert = () => {
         if(document.getElementById("kf-wert-bekannt").value === "ja") {
@@ -3967,5 +3972,22 @@ kfWert();
 
 document.getElementById("kf-wert-bekannt").oninput = function() {
     kfWert();
+    start();
+}
+
+const breite = () => {
+    if(document.getElementById("manuelle-breite").value === "ja") {
+        rigolenBreite = document.getElementById("breite-input").value;
+        document.getElementById("breite-input").removeAttribute("disabled")
+    } else if(document.getElementById("manuelle-breite").value === "nein") {
+        document.getElementById("breite-input").value = 3;
+        document.getElementById("breite-input").setAttribute("disabled", "disabled")
+    }
+    start();
+}
+breite();
+
+document.getElementById("manuelle-breite").oninput = function() {
+    breite();
     start();
 }
