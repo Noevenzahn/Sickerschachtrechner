@@ -3868,7 +3868,14 @@ const findBest = (wert) => {
             break; 
     }
 }
-findBest(undurchlässigeFläche);
+if(document.getElementById("tank-wahl").value === "nein") {
+    findBest(undurchlässigeFläche);
+    document.getElementById("tank-wahl-input").setAttribute("disabled", "disabled")
+} else if(document.getElementById("tank-wahl").value === "ja") {
+    empfohlenerSchacht = document.getElementById("tank-wahl-input").value;
+    document.getElementById("tank-wahl-input").removeAttribute("disabled");
+}
+console.log(empfohlenerSchacht)
 
 const schachtVolumen = empfohlenerSchacht / 1000;
 
@@ -3989,5 +3996,12 @@ breite();
 
 document.getElementById("manuelle-breite").oninput = function() {
     breite();
+    start();
+}
+
+document.getElementById("tank-wahl").oninput = function() {
+    start();
+}
+document.getElementById("tank-wahl-input").oninput = function() {
     start();
 }

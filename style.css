@@ -137,7 +137,11 @@ input:disabled.number-input:focus,
 select:disabled#bodenart,
 select:disabled#bodenart:hover,
 select:disabled#bodenart:active,
-select:disabled#bodenart:focus {
+select:disabled#bodenart:focus,
+select:disabled#tank-wahl-input,
+select:disabled#tank-wahl-input:hover,
+select:disabled#tank-wahl-input:active,
+select:disabled#tank-wahl-input:focus {
     cursor: not-allowed;
     background-color: var(--grey);
 }
@@ -171,8 +175,9 @@ select:disabled#bodenart:focus {
 .input-text-group p {
     margin: 0;
 }
-#kf-wert-input, #breite-input {
+#kf-wert-input, #breite-input, #tank-wahl-input {
     margin-left: 12px;
+    width: 130px;
 }
 p {
     font-size: 1.25rem;
