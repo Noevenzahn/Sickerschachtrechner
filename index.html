@@ -14,7 +14,7 @@
   <div class="rechner">
     <div class="all-inputs">
       <div class="number-input-group">
-        <input id="dachflaeche" class="number-input" type="number" placeholder="Dachfläche..." pattern="[0-9]*"
+        <input id="dachflaeche" class="number-input" type="number" placeholder="Grundfläche" pattern="[0-9]*"
           inputmode="numeric" value="" min="0" max="555" autocomplete="off">
         <span class="fläche">m<sup>2</sup></span>
       </div>
@@ -34,7 +34,9 @@
         </select>
       </div>
       <div class="input-text-group">
-        <p>kf-Wert bekannt?<img src="Bilder/info.svg" alt="" class="info-icon"></p>
+        <div class="tooltip">
+        <p>kf-Wert bekannt?<img src="Bilder/info.svg" alt="" class="info-icon"><span class="tooltiptext">Erklärung zu diesem Input folgt hier. Erklärung zu diesem Input folgt hier. Erklärung zu diesem Input folgt hier.</span></p>
+        </div>
         <div class="select-wrapper-small">
           <select id="kf-wert-bekannt" class="ja-nein">
             <option value="ja">ja</option>
@@ -45,17 +47,24 @@
           min="0" autocomplete="off">
       </div>
       <div class="input-text-group">
-        <p>Manuelle Breite?<img src="Bilder/info.svg" alt="" class="info-icon"></p>
+        <div class="tooltip">
+        <p>Manuelle Gruben-Breite?<img src="Bilder/info.svg" alt="" class="info-icon"><span class="tooltiptext">Erklärung zu diesem Input folgt hier. Erklärung zu diesem Input folgt hier. Erklärung zu diesem Input folgt hier.</span></p>
+        </div>
         <div class="select-wrapper-small">
           <select id="manuelle-breite" class="ja-nein">
             <option value="nein" selected="selected">nein</option>
             <option value="ja">ja</option>
           </select>
         </div>
+        <div class="small-input-group">
           <input id="breite-input" class="number-input" type="number" pattern="[0-9]*" inputmode="numeric" value="3" min="0" autocomplete="off">
+          <span class="fläche-small">m<sup>2</sup></span>
+        </div>
       </div>
       <div class="input-text-group">
-        <p>Manueller Tank?<img src="Bilder/info.svg" alt="" class="info-icon"></p>
+        <div class="tooltip">
+        <p>Manueller Tank?<img src="Bilder/info.svg" alt="" class="info-icon"><span class="tooltiptext">Erklärung zu diesem Input folgt hier. Erklärung zu diesem Input folgt hier. Erklärung zu diesem Input folgt hier.</span></p>
+        </div>
         <div class="select-wrapper-small">
           <select id="tank-wahl" class="ja-nein">
             <option value="ja">ja</option>
@@ -76,10 +85,10 @@
       
       <div class="select-wrapper">
         <select id="bodenart" class="dachartselect">
-          <option value="0.0005">Grobsand</option>
-          <option value="0.0001">Mittelsand</option>
-          <option value="0.00005">Feinsand</option>
-          <option value="0.00001">lehmiger Sand</option>
+          <option value="0.0005">Grobsand (0,0005)</option>
+          <option value="0.0001">Mittelsand (0,0001)</option>
+          <option value="0.00005">Feinsand (0,00005)</option>
+          <option value="0.00001">lehmiger Sand (0,00001)</option>
         </select>
       </div>
       <p class="kf-unbekannt">(Nur nötig, wenn kf-Wert unbekannt)</p>
@@ -90,7 +99,9 @@
       </div>
 
       <div class="input-text-group">
-        <p>Sollen nahe Gebäude möglichst geschützt sein?</p>
+        <div class="tooltip">
+          <p>Sollen nahe Gebäude möglichst geschützt sein?<img src="Bilder/info.svg" alt="" class="info-icon"><span class="tooltiptext">Erklärung zu diesem Input folgt hier. Erklärung zu diesem Input folgt hier. Erklärung zu diesem Input folgt hier.</span></p>
+        </div>
         <div class="select-wrapper-small">
           <select id="haftungsausschluss" class="ja-nein">
             <option value="ja">ja</option>

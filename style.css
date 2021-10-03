@@ -1,8 +1,11 @@
-:root, html, body {
+:root,
+html,
+body {
     --blue: #0A4A88;
     --grey: #C6C6C6;
     font-family: neue-kabel, sans-serif;
 }
+
 .rechner {
     font-family: neue-kabel, sans-serif;
     --blue: #0A4A88;
@@ -11,24 +14,28 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   margin-top:  100px;
+    margin-top: 100px;
 }
+
 .all-inputs,
 .results {
     max-width: 341px;
 }
+
 .input-group {
     display: flex;
     flex-direction: column;
     margin-top: 20px;
-  }  
+}
+
 .input-description {
     display: block;
     font-size: 25px;
     font-weight: bold;
     margin: 25px 0px 5px 0px;
     width: 341px;
-  }
+}
+
 .number-input-group {
     width: 341px;
     height: 60px;
@@ -37,28 +44,32 @@
     background-color: var(--blue);
     box-sizing: border-box;
 }
+
 .number-input {
     width: 281px;
     height: 60px;
     padding: 0 15px;
     background-color: var(--blue);
 }
+
 .number-input::placeholder {
-  color: #8B96B5;
+    color: #8B96B5;
 }
+
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
 }
+
 input[type=number] {
     -moz-appearance: textfield;
 }
+
 input {
     padding: 0 15px 0 15px;
     background-color: var(--blue);
-
     font-family: neue-kabel, sans-serif;
     font-size: 30px;
     color: #fff;
@@ -66,33 +77,49 @@ input {
     outline: none;
     box-sizing: border-box;
 }
+
 .fläche {
-    font-size: 25px;
+    font-size: 30px;
     color: #fff;
 }
-#dachart, 
+
+.small-input-group {
+    position: relative;
+}
+
+.fläche-small {
+    position: absolute;
+    font-size: 30px;
+    color: #fff;
+    right: 15px;
+    top: 6px;
+}
+
+#dachart,
 #bodenart {
     width: 341px;
     height: 60px;
     margin-top: 12px;
     padding: 0 15px 0 15px;
     background-color: var(--blue);
-  
     font-family: neue-kabel, sans-serif;
     font-size: 1.7rem;
     color: #fff;
     border: none;
     box-sizing: border-box;
 }
+
 select {
     -webkit-appearance: none;
     -webkit-border-radius: 0;
     border-radius: 0;
 }
+
 .select-wrapper,
 .select-wrapper-small {
     position: relative;
 }
+
 .select-wrapper::after {
     content: '';
     background-color: var(--blue);
@@ -101,8 +128,9 @@ select {
     position: absolute;
     right: 0;
     top: 12px;
-    pointer-events: none; 
+    pointer-events: none;
 }
+
 .select-wrapper::before,
 .select-wrapper-small::before {
     content: '';
@@ -115,8 +143,9 @@ select {
     border-left: 3px solid #fff;
     transform: rotate(315deg);
     z-index: 999;
-    pointer-events: none; 
+    pointer-events: none;
 }
+
 .select-wrapper-small::before {
     top: 22px;
 }
@@ -125,14 +154,15 @@ select {
     width: 100px;
     height: 60px;
     padding: 0 15px 0 10px;
+    margin-left: 10px;
     background-color: var(--blue);
-  
     font-family: neue-kabel, sans-serif;
     font-size: 1.7rem;
     color: #fff;
     border: none;
     box-sizing: border-box;
 }
+
 input:disabled.number-input,
 input:disabled.number-input:hover,
 input:disabled.number-input:active,
@@ -148,26 +178,38 @@ select:disabled#tank-wahl-input:focus {
     cursor: not-allowed;
     background-color: var(--grey);
 }
-#dachart option, 
-#bodenart option, 
+
+#dachart option,
+#bodenart option,
 .ja-nein option {
     font-size: 20px;
 }
-#plz-input, #kf-wert-input,#breite-input {
+
+#plz-input,
+#kf-wert-input,
+#breite-input {
     width: 130px;
     text-align: center;
 }
+
+#breite-input {
+    padding-right: 60px;
+    text-align: right;
+}
+
 .plz {
     display: flex;
     justify-content: flex-end;
     margin-top: 12px;
 }
+
 #plz-text {
     align-self: center;
     font-size: 30px;
     font-weight: bold;
     margin-right: 25px;
 }
+
 .input-text-group {
     display: flex;
     flex-direction: row;
@@ -175,26 +217,39 @@ select:disabled#tank-wahl-input:focus {
     justify-content: center;
     margin-top: 12px;
 }
+
 .input-text-group p {
     margin: 0;
 }
-#kf-wert-input, #breite-input, #tank-wahl-input {
+
+#kf-wert-input,
+#breite-input,
+#tank-wahl-input {
     margin-left: 12px;
     width: 130px;
 }
+
 p {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
+    line-height: 1.2rem;
     margin: 0;
 }
+
 .kf-unbekannt {
     margin: 10px 0 25px 0;
     width: 341px;
 }
+
 .results {
     margin-top: 30px;
     display: flex;
     flex-direction: column;
 }
+
+.results p {
+    line-height: 1.7rem;
+}
+
 #result-image {
     margin: 20px 0px 25px;
     width: 100px;
@@ -205,6 +260,41 @@ p {
     margin: 0 5px;
 }
 
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: black;
+    color: #fff;
+    padding: 15px;
+    position: absolute;
+    z-index: 9999;
+    top: 110%;
+    left: 50%;
+    margin-left: -45px;
+    opacity: 0;
+    transition: opacity 300ms;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 20%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
 
 @media only screen and (min-width: 900px) {
     .rechner {
