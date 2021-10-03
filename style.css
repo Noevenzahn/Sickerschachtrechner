@@ -101,6 +101,7 @@ select {
     position: absolute;
     right: 0;
     top: 12px;
+    pointer-events: none; 
 }
 .select-wrapper::before,
 .select-wrapper-small::before {
@@ -114,10 +115,12 @@ select {
     border-left: 3px solid #fff;
     transform: rotate(315deg);
     z-index: 999;
+    pointer-events: none; 
 }
 .select-wrapper-small::before {
     top: 22px;
 }
+
 .ja-nein {
     width: 100px;
     height: 60px;
@@ -190,6 +193,12 @@ p {
 .results {
     margin-top: 30px;
 }
+
+.info-icon {
+    width: 12px;
+    margin: 0 5px;
+}
+
 
 @media only screen and (min-width: 900px) {
     .rechner {

@@ -15,7 +15,7 @@
     <div class="all-inputs">
       <div class="number-input-group">
         <input id="dachflaeche" class="number-input" type="number" placeholder="Dachfläche..." pattern="[0-9]*"
-          inputmode="numeric" value="" min="0" autocomplete="off">
+          inputmode="numeric" value="" min="0" max="555" autocomplete="off">
         <span class="fläche">m<sup>2</sup></span>
       </div>
       <div class="select-wrapper">
@@ -34,7 +34,7 @@
         </select>
       </div>
       <div class="input-text-group">
-        <p>kf-Wert bekannt?</p>
+        <p>kf-Wert bekannt?<img src="info.svg" alt="" class="info-icon"></p>
         <div class="select-wrapper-small">
           <select id="kf-wert-bekannt" class="ja-nein">
             <option value="ja">ja</option>
@@ -45,7 +45,7 @@
           min="0" autocomplete="off">
       </div>
       <div class="input-text-group">
-        <p>Manuelle Breite?</p>
+        <p>Manuelle Breite?<img src="info.svg" alt="" class="info-icon"></p>
         <div class="select-wrapper-small">
           <select id="manuelle-breite" class="ja-nein">
             <option value="nein" selected="selected">nein</option>
@@ -55,7 +55,7 @@
           <input id="breite-input" class="number-input" type="number" pattern="[0-9]*" inputmode="numeric" value="3" min="0" autocomplete="off">
       </div>
       <div class="input-text-group">
-        <p>Manueller Tank?</p>
+        <p>Manueller Tank?<img src="info.svg" alt="" class="info-icon"></p>
         <div class="select-wrapper-small">
           <select id="tank-wahl" class="ja-nein">
             <option value="ja">ja</option>
