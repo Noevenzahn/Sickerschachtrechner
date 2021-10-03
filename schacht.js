@@ -3837,100 +3837,122 @@ let undurchlässigeFläche = dachfläche * abflussBeiwert;
 let empfohlenerSchacht;
 
 const start = () => {
-const findBest = (wert) => {
-    const maxUndurchlässigeFlächen = [40, 140, 190, 200, 320, 500];
-    let passend;
+    const findBest = (wert) => {
+        const maxUndurchlässigeFlächen = [40, 140, 190, 200, 320, 500];
+        let passend;
 
-    for (const schacht of maxUndurchlässigeFlächen) {
-        if (undurchlässigeFläche <= schacht) {
-            passend = schacht;
-            break
+        for (const schacht of maxUndurchlässigeFlächen) {
+            if (undurchlässigeFläche <= schacht) {
+                passend = schacht;
+                break
+            }
+        }
+        switch (passend) {
+            case 40:
+                empfohlenerSchacht = 140; 
+                break; 
+            case 140:
+                empfohlenerSchacht = 500;
+                break; 
+            case 190:
+                empfohlenerSchacht = 900;
+                break; 
+            case 200:
+                empfohlenerSchacht = 950;
+                break; 
+            case 320:
+                empfohlenerSchacht = 1000;
+                break; 
+            case 500:
+                empfohlenerSchacht = 2000;  
+                break; 
         }
     }
-    switch (passend) {
-        case 40:
-            empfohlenerSchacht = 140; 
-            break; 
-        case 140:
-            empfohlenerSchacht = 500;
-            break; 
-        case 190:
-            empfohlenerSchacht = 900;
-            break; 
-        case 200:
-            empfohlenerSchacht = 950;
-            break; 
-        case 320:
-            empfohlenerSchacht = 1000;
-            break; 
-        case 500:
-            empfohlenerSchacht = 2000;  
-            break; 
+    if(document.getElementById("tank-wahl").value === "nein") {
+        findBest(undurchlässigeFläche);
+        document.getElementById("tank-wahl-input").setAttribute("disabled", "disabled")
+    } if(document.getElementById("tank-wahl").value === "ja") {
+        empfohlenerSchacht = document.getElementById("tank-wahl-input").value;
+        document.getElementById("tank-wahl-input").removeAttribute("disabled");
     }
-}
-if(document.getElementById("tank-wahl").value === "nein") {
-    findBest(undurchlässigeFläche);
-    document.getElementById("tank-wahl-input").setAttribute("disabled", "disabled")
-} else if(document.getElementById("tank-wahl").value === "ja") {
-    empfohlenerSchacht = document.getElementById("tank-wahl-input").value;
-    document.getElementById("tank-wahl-input").removeAttribute("disabled");
-}
-console.log(empfohlenerSchacht)
 
-const schachtVolumen = empfohlenerSchacht / 1000;
+    const schachtVolumen = empfohlenerSchacht / 1000;
 
-const rigolenBreite = document.getElementById("breite-input").value;
+    const rigolenBreite = document.getElementById("breite-input").value;
 
-const rigolenHöhe = schacht[empfohlenerSchacht].rigolenHöhe / 100;
+    const rigolenHöhe = schacht[empfohlenerSchacht].rigolenHöhe / 100;
 
-const schachtHöhe = schacht[empfohlenerSchacht].schachtHöhe / 100;
-const zulaufUnten = schacht[empfohlenerSchacht].zulaufUnten / 100;
-const zulaufDurchmesser = schacht[empfohlenerSchacht].zulaufDurchmesser / 100;
-const grubenTiefe = ((+schachtHöhe-zulaufUnten+(zulaufDurchmesser / 10)) + rigolenHöhe).toFixed(2);
+    const schachtHöhe = schacht[empfohlenerSchacht].schachtHöhe / 100;
+    const zulaufUnten = schacht[empfohlenerSchacht].zulaufUnten / 100;
+    const zulaufDurchmesser = schacht[empfohlenerSchacht].zulaufDurchmesser / 100;
+    const grubenTiefe = ((+schachtHöhe-zulaufUnten+(zulaufDurchmesser / 10)) + rigolenHöhe).toFixed(2);
 
-const speicherkoeffizient = 0.35;
-const zuschlagfaktor = 1.1;
+    const speicherkoeffizient = 0.35;
+    const zuschlagfaktor = 1.1;
 
 
-const calc = (minute, regen) => {
-    const ol = undurchlässigeFläche * Math.pow(10, -7);
-    const ul = rigolenBreite * rigolenHöhe * speicherkoeffizient / (60 * zuschlagfaktor);
-    const ur = (rigolenBreite + rigolenHöhe / 2) * bodendurchlässigkeit / 2;
-    
-    const rigolenLänge = (ol * regen) / (ul / minute + ur);
-    const rigolenVolumen = rigolenLänge * rigolenBreite * rigolenHöhe;
+    const calc = (minute, regen) => {
+        const ol = undurchlässigeFläche * Math.pow(10, -7);
+        const ul = rigolenBreite * rigolenHöhe * speicherkoeffizient / (60 * zuschlagfaktor);
+        const ur = (rigolenBreite + rigolenHöhe / 2) * bodendurchlässigkeit / 2;
+        
+        const rigolenLänge = (ol * regen) / (ul / minute + ur);
+        const rigolenVolumen = rigolenLänge * rigolenBreite * rigolenHöhe;
 
-    return [rigolenLänge.toFixed(2), rigolenVolumen.toFixed(2)]
-}
+        return [rigolenLänge.toFixed(2), rigolenVolumen.toFixed(2)]
+    }
 
-const minuten = [5, 10, 15, 20, 30, 45, 60, 90, 120, 180, 240, 360, 540, 720, 1080, 1440, 2880]
-const ergebnisse = [];
+    const minuten = [5, 10, 15, 20, 30, 45, 60, 90, 120, 180, 240, 360, 540, 720, 1080, 1440, 2880]
+    const ergebnisse = [];
 
-for (let i = 0; i < minuten.length; i++) {
-    const minute = minuten[i];
-    const regen = tabelle[plz][i];
-    
-    ergebnisse.push(calc(minute, regen))
-}
-const größteWerte = ergebnisse.reduce(function(a, b) {
-    return a[1] > b[1] ? a : b;
-});
-let [rigolenLänge, rigolenVolumen] = größteWerte;
-
-
-const kiesVolumen = rigolenVolumen - (schachtVolumen / 2);
-const drainageKies = (kiesVolumen * 1.75).toFixed(1);
-const geotextil = Math.floor(((2 * rigolenBreite * rigolenLänge + 2 * rigolenHöhe * rigolenBreite + 2 * rigolenHöhe * rigolenLänge)* 1.2) / 2.5) * 2.5;
+    for (let i = 0; i < minuten.length; i++) {
+        const minute = minuten[i];
+        const regen = tabelle[plz][i];
+        
+        ergebnisse.push(calc(minute, regen))
+    }
+    const größteWerte = ergebnisse.reduce(function(a, b) {
+        return a[1] > b[1] ? a : b;
+    });
+    let [rigolenLänge, rigolenVolumen] = größteWerte;
 
 
-document.getElementById("schacht").innerText = `Empfohlene Schachtgröße: ${empfohlenerSchacht}l`;
-document.getElementById("geotextil").innerText = `Geotextil: ${geotextil}`;
+    const kiesVolumen = rigolenVolumen - (schachtVolumen / 2);
+    const drainageKies = (kiesVolumen * 1.75).toFixed(1);
+    const geotextil = Math.floor(((2 * rigolenBreite * rigolenLänge + 2 * rigolenHöhe * rigolenBreite + 2 * rigolenHöhe * rigolenLänge)* 1.2) / 2.5) * 2.5;
 
-document.getElementById("drainagekies").innerText = `Drainagekies 16/32: ${drainageKies}T`;
 
-document.getElementById("gruben-länge").innerText = `Länge: ${rigolenLänge}m`;
-document.getElementById("gruben-breite").innerText = `Breite: ${rigolenBreite}m`;
-document.getElementById("gruben-tiefe").innerText = `Tiefe: ${grubenTiefe}m`;
+    document.getElementById("schacht").innerText = `Empfohlene Schachtgröße: ${empfohlenerSchacht}l`;
+    document.getElementById("geotextil").innerText = `Geotextil: ${geotextil}`;
+
+    document.getElementById("drainagekies").innerText = `Drainagekies 16/32: ${drainageKies} Tonnen`;
+
+    document.getElementById("gruben-länge").innerText = `Länge: ${rigolenLänge}m`;
+    document.getElementById("gruben-breite").innerText = `Breite: ${rigolenBreite}m`;
+    document.getElementById("gruben-tiefe").innerText = `Tiefe: ${grubenTiefe}m`;
+
+
+    const resultImage = document.getElementById("result-image");
+    switch (empfohlenerSchacht) {
+        case 140:
+            resultImage.src = "Bilder/140.jpg"
+            break;
+        case 500:
+            resultImage.src = "Bilder/500.jpg"
+            break;
+        case 900:
+            resultImage.src = "Bilder/900.jpg"
+            break;
+        case 950:
+            resultImage.src = "Bilder/950.jpg"
+            break;
+        case 1000:
+            resultImage.src = "Bilder/1000.jpg"
+            break;
+        case 2000:
+            resultImage.src = "Bilder/2000.jpg"
+            break;
+    }
 }
 start();
 
