@@ -1947,7 +1947,7 @@ const tabelle_2 = {
         11.2,
         7.2
     ],
-     "02": [
+    "02": [
         460,
         328.3,
         264.4,
@@ -1966,7 +1966,7 @@ const tabelle_2 = {
         9.5,
         5.8
     ],
-     "03": [
+    "03": [
         423.3,
         306.7,
         247.8,
@@ -1985,7 +1985,7 @@ const tabelle_2 = {
         9.6,
         5.5
     ],
-     "04": [
+    "04": [
         440,
         316.7,
         255.6,
@@ -2004,7 +2004,7 @@ const tabelle_2 = {
         9.5,
         5.3
     ],
-     "05": [
+    "05": [
         386.7,
         286.7,
         233.3,
@@ -2023,7 +2023,7 @@ const tabelle_2 = {
         9.7,
         5.9
     ],
-     "06": [
+    "06": [
         386.7,
         286.7,
         233.3,
@@ -2042,7 +2042,7 @@ const tabelle_2 = {
         9.7,
         5.9
     ],
-     "07": [
+    "07": [
         446.7,
         321.7,
         258.9,
@@ -2061,7 +2061,7 @@ const tabelle_2 = {
         8.4,
         5.1
     ],
-     "08": [
+    "08": [
         460,
         345,
         284.4,
@@ -2080,7 +2080,7 @@ const tabelle_2 = {
         12.2,
         7.5
     ],
-     "09": [
+    "09": [
         450,
         323.3,
         261.1,
@@ -2099,7 +2099,7 @@ const tabelle_2 = {
         8.4,
         5.3
     ],
-     "10": [
+    "10": [
         433.3,
         320,
         261.1,
@@ -2118,7 +2118,7 @@ const tabelle_2 = {
         8.4,
         5
     ],
-     "11": [
+    "11": [
         433.3,
         320,
         261.1,
@@ -2137,7 +2137,7 @@ const tabelle_2 = {
         8.4,
         5
     ],
-     "12": [
+    "12": [
         493.3,
         341.7,
         271.1,
@@ -2156,7 +2156,7 @@ const tabelle_2 = {
         8.4,
         4.8
     ],
-     "13": [
+    "13": [
         416.7,
         306.7,
         250,
@@ -2175,7 +2175,7 @@ const tabelle_2 = {
         8.2,
         4.8
     ],
-     "14": [
+    "14": [
         403.3,
         296.7,
         242.2,
@@ -2194,7 +2194,7 @@ const tabelle_2 = {
         8.2,
         4.8
     ],
-     "15": [
+    "15": [
         373.3,
         276.7,
         226.7,
@@ -2213,7 +2213,7 @@ const tabelle_2 = {
         9,
         5.1
     ],
-     "16": [
+    "16": [
         340,
         256.7,
         213.3,
@@ -2232,7 +2232,7 @@ const tabelle_2 = {
         7.4,
         4.3
     ],
-     "17": [
+    "17": [
         373.3,
         275,
         224.4,
@@ -2251,7 +2251,7 @@ const tabelle_2 = {
         6,
         3.6
     ],
-     "18": [
+    "18": [
         306.7,
         236.7,
         197.8,
@@ -2270,7 +2270,7 @@ const tabelle_2 = {
         6.8,
         4.1
     ],
-     "19": [
+    "19": [
         310,
         241.7,
         204.4,
@@ -2289,7 +2289,7 @@ const tabelle_2 = {
         7.2,
         4.2
     ],
-     "20": [
+    "20": [
         416.7,
         298.3,
         238.9,
@@ -2308,7 +2308,7 @@ const tabelle_2 = {
         7.8,
         4.6
     ],
-     "21": [
+    "21": [
         346.7,
         260,
         214.4,
@@ -2327,7 +2327,7 @@ const tabelle_2 = {
         6.7,
         4
     ],
-     "22": [
+    "22": [
         386.7,
         281.7,
         228.9,
@@ -2346,7 +2346,7 @@ const tabelle_2 = {
         7.7,
         4.7
     ],
-     "23": [
+    "23": [
         343.3,
         246.7,
         197.8,
@@ -2365,7 +2365,7 @@ const tabelle_2 = {
         7.3,
         4.3
     ],
-     "24": [
+    "24": [
         396.7,
         285,
         231.1,
@@ -2384,7 +2384,7 @@ const tabelle_2 = {
         8.7,
         4.9
     ],
-     "25": [
+    "25": [
         400,
         286.7,
         231.1,
@@ -2403,7 +2403,7 @@ const tabelle_2 = {
         7.9,
         4.6
     ],
-     "26": [
+    "26": [
         326.7,
         246.7,
         204.4,
@@ -2422,7 +2422,7 @@ const tabelle_2 = {
         7.6,
         4.4
     ],
-     "27": [
+    "27": [
         376.7,
         273.3,
         221.1,
@@ -2441,7 +2441,7 @@ const tabelle_2 = {
         7.2,
         4.4
     ],
-     "28": [
+    "28": [
         316.7,
         241.7,
         200,
@@ -2460,7 +2460,7 @@ const tabelle_2 = {
         7.7,
         4.4
     ],
-     "29": [
+    "29": [
         383.3,
         283.3,
         232.2,
@@ -2479,7 +2479,7 @@ const tabelle_2 = {
         7,
         4.3
     ],
-     "30": [
+    "30": [
         360,
         265,
         216.7,
@@ -2498,7 +2498,7 @@ const tabelle_2 = {
         7.7,
         4.5
     ],
-     "31": [
+    "31": [
         386.7,
         271.7,
         216.7,
@@ -2517,7 +2517,7 @@ const tabelle_2 = {
         7.8,
         4.4
     ],
-     "32": [
+    "32": [
         393.3,
         281.7,
         227.8,
@@ -2536,7 +2536,7 @@ const tabelle_2 = {
         8.9,
         4.6
     ],
-     "33": [
+    "33": [
         423.3,
         303.3,
         245.6,
@@ -2555,7 +2555,7 @@ const tabelle_2 = {
         7.1,
         4.3
     ],
-     "34": [
+    "34": [
         453.3,
         328.3,
         265.6,
@@ -2574,7 +2574,7 @@ const tabelle_2 = {
         7.6,
         4.2
     ],
-     "35": [
+    "35": [
         370,
         278.3,
         230,
@@ -2593,7 +2593,7 @@ const tabelle_2 = {
         7.6,
         4.6
     ],
-     "36": [
+    "36": [
         383.3,
         280,
         227.8,
@@ -2612,7 +2612,7 @@ const tabelle_2 = {
         7.6,
         4.5
     ],
-     "37": [
+    "37": [
         400,
         295,
         242.2,
@@ -2631,7 +2631,7 @@ const tabelle_2 = {
         8.1,
         4.6
     ],
-     "38": [
+    "38": [
         383.3,
         283.3,
         232.2,
@@ -2650,7 +2650,7 @@ const tabelle_2 = {
         7.1,
         4.3
     ],
-     "39": [
+    "39": [
         330,
         246.7,
         203.3,
@@ -2669,7 +2669,7 @@ const tabelle_2 = {
         6.4,
         3.9
     ],
-     "40": [
+    "40": [
         363.3,
         268.3,
         218.9,
@@ -2688,7 +2688,7 @@ const tabelle_2 = {
         7,
         4.1
     ],
-     "41": [
+    "41": [
         373.3,
         275,
         225.6,
@@ -2707,7 +2707,7 @@ const tabelle_2 = {
         7.1,
         4.2
     ],
-     "42": [
+    "42": [
         466.7,
         331.7,
         266.7,
@@ -2726,7 +2726,7 @@ const tabelle_2 = {
         8.9,
         5.6
     ],
-     "43": [
+    "43": [
         433.3,
         311.7,
         252.2,
@@ -2745,7 +2745,7 @@ const tabelle_2 = {
         7.1,
         4.2
     ],
-     "44": [
+    "44": [
         433.3,
         311.7,
         252.2,
@@ -2764,7 +2764,7 @@ const tabelle_2 = {
         7.1,
         4.2
     ],
-     "45": [
+    "45": [
         386.7,
         281.7,
         228.9,
@@ -2783,7 +2783,7 @@ const tabelle_2 = {
         7.4,
         4.6
     ],
-     "46": [
+    "46": [
         393.3,
         286.7,
         233.3,
@@ -2802,7 +2802,7 @@ const tabelle_2 = {
         7.5,
         4.4
     ],
-     "47": [
+    "47": [
         403.3,
         290,
         233.3,
@@ -2821,7 +2821,7 @@ const tabelle_2 = {
         6.9,
         4.2
     ],
-     "48": [
+    "48": [
         423.3,
         301.7,
         242.2,
@@ -2840,7 +2840,7 @@ const tabelle_2 = {
         7.9,
         4.6
     ],
-     "49": [
+    "49": [
         446.7,
         320,
         256.7,
@@ -2859,7 +2859,7 @@ const tabelle_2 = {
         8,
         4.7
     ],
-     "50": [
+    "50": [
         456.7,
         316.7,
         250,
@@ -2878,7 +2878,7 @@ const tabelle_2 = {
         6.7,
         4.2
     ],
-     "51": [
+    "51": [
         483.3,
         333.3,
         264.4,
@@ -2897,7 +2897,7 @@ const tabelle_2 = {
         7.4,
         4.5
     ],
-     "52": [
+    "52": [
         336.7,
         256.7,
         212.2,
@@ -2916,7 +2916,7 @@ const tabelle_2 = {
         9.5,
         5.4
     ],
-     "53": [
+    "53": [
         366.7,
         275,
         226.7,
@@ -2935,7 +2935,7 @@ const tabelle_2 = {
         7.6,
         4.5
     ],
-     "54": [
+    "54": [
         456.7,
         323.3,
         260,
@@ -2954,7 +2954,7 @@ const tabelle_2 = {
         7.6,
         4.5
     ],
-     "55": [
+    "55": [
         403.3,
         291.7,
         236.7,
@@ -2973,7 +2973,7 @@ const tabelle_2 = {
         6.6,
         3.9
     ],
-     "56": [
+    "56": [
         403.3,
         291.7,
         237.8,
@@ -2992,7 +2992,7 @@ const tabelle_2 = {
         7,
         4.6
     ],
-     "57": [
+    "57": [
         496.7,
         343.3,
         271.1,
@@ -3011,7 +3011,7 @@ const tabelle_2 = {
         7.8,
         5.1
     ],
-     "58": [
+    "58": [
         380,
         283.3,
         234.4,
@@ -3030,7 +3030,7 @@ const tabelle_2 = {
         7,
         4.1
     ],
-     "59": [
+    "59": [
         416.7,
         303.3,
         246.7,
@@ -3049,7 +3049,7 @@ const tabelle_2 = {
         6.9,
         4
     ],
-     "60": [
+    "60": [
         430,
         316.7,
         257.8,
@@ -3068,7 +3068,7 @@ const tabelle_2 = {
         7.5,
         4.7
     ],
-     "61": [
+    "61": [
         400,
         291.7,
         235.6,
@@ -3087,7 +3087,7 @@ const tabelle_2 = {
         7.1,
         4.2
     ],
-     "62": [
+    "62": [
         423.3,
         301.7,
         241.1,
@@ -3106,7 +3106,7 @@ const tabelle_2 = {
         7.3,
         4.3
     ],
-     "63": [
+    "63": [
         423.3,
         301.7,
         241.1,
@@ -3125,7 +3125,7 @@ const tabelle_2 = {
         7.3,
         4.3
     ],
-     "64": [
+    "64": [
         396.7,
         291.7,
         238.9,
@@ -3144,7 +3144,7 @@ const tabelle_2 = {
         8.6,
         5.1
     ],
-     "65": [
+    "65": [
         433.3,
         305,
         244.4,
@@ -3163,7 +3163,7 @@ const tabelle_2 = {
         6.5,
         3.8
     ],
-     "66": [
+    "66": [
         420,
         313.3,
         257.8,
@@ -3182,7 +3182,7 @@ const tabelle_2 = {
         7.3,
         4.5
     ],
-     "67": [
+    "67": [
         486.7,
         340,
         270,
@@ -3201,7 +3201,7 @@ const tabelle_2 = {
         8.2,
         4.5
     ],
-     "68": [
+    "68": [
         440,
         330,
         273.3,
@@ -3220,7 +3220,7 @@ const tabelle_2 = {
         6.7,
         4.3
     ],
-     "69": [
+    "69": [
         503.3,
         361.7,
         291.1,
@@ -3239,7 +3239,7 @@ const tabelle_2 = {
         9.2,
         5.9
     ],
-     "70": [
+    "70": [
         500,
         350,
         278.9,
@@ -3258,7 +3258,7 @@ const tabelle_2 = {
         8.2,
         4.9
     ],
-     "71": [
+    "71": [
         463.3,
         330,
         264.4,
@@ -3277,7 +3277,7 @@ const tabelle_2 = {
         8.5,
         5.1
     ],
-     "72": [
+    "72": [
         476.7,
         346.7,
         280,
@@ -3296,7 +3296,7 @@ const tabelle_2 = {
         8.2,
         4.9
     ],
-     "73": [
+    "73": [
         410,
         298.3,
         242.2,
@@ -3315,7 +3315,7 @@ const tabelle_2 = {
         10.1,
         6.4
     ],
-     "74": [
+    "74": [
         373.3,
         278.3,
         230,
@@ -3334,7 +3334,7 @@ const tabelle_2 = {
         7.9,
         5.1
     ],
-     "75": [
+    "75": [
         406.7,
         306.7,
         255.6,
@@ -3353,7 +3353,7 @@ const tabelle_2 = {
         9.3,
         5.4
     ],
-     "76": [
+    "76": [
         426.7,
         318.3,
         262.2,
@@ -3372,7 +3372,7 @@ const tabelle_2 = {
         8.8,
         5.4
     ],
-     "77": [
+    "77": [
         526.7,
         376.7,
         303.3,
@@ -3391,7 +3391,7 @@ const tabelle_2 = {
         7.7,
         5
     ],
-     "78": [
+    "78": [
         476.7,
         346.7,
         281.1,
@@ -3410,7 +3410,7 @@ const tabelle_2 = {
         8.7,
         5
     ],
-     "79": [
+    "79": [
         520,
         371.7,
         300,
@@ -3429,7 +3429,7 @@ const tabelle_2 = {
         9.5,
         5.7
     ],
-     "80": [
+    "80": [
         446.7,
         336.7,
         278.9,
@@ -3448,7 +3448,7 @@ const tabelle_2 = {
         10.1,
         6.5
     ],
-     "81": [
+    "81": [
         446.7,
         336.7,
         278.9,
@@ -3467,7 +3467,7 @@ const tabelle_2 = {
         10.1,
         6.5
     ],
-     "82": [
+    "82": [
         470,
         345,
         282.2,
@@ -3486,7 +3486,7 @@ const tabelle_2 = {
         9.9,
         6.3
     ],
-     "83": [
+    "83": [
         543.3,
         383.3,
         306.7,
@@ -3505,7 +3505,7 @@ const tabelle_2 = {
         11.4,
         7.8
     ],
-     "84": [
+    "84": [
         530,
         365,
         290,
@@ -3524,7 +3524,7 @@ const tabelle_2 = {
         9.2,
         6
     ],
-     "85": [
+    "85": [
         490,
         348.3,
         278.9,
@@ -3543,7 +3543,7 @@ const tabelle_2 = {
         9,
         5.6
     ],
-     "86": [
+    "86": [
         383.3,
         288.3,
         237.8,
@@ -3562,7 +3562,7 @@ const tabelle_2 = {
         7.2,
         4.9
     ],
-     "87": [
+    "87": [
         433.3,
         328.3,
         271.1,
@@ -3581,7 +3581,7 @@ const tabelle_2 = {
         10.7,
         6.8
     ],
-     "88": [
+    "88": [
         480,
         345,
         280,
@@ -3600,7 +3600,7 @@ const tabelle_2 = {
         10,
         6.2
     ],
-     "89": [
+    "89": [
         403.3,
         298.3,
         244.4,
@@ -3619,7 +3619,7 @@ const tabelle_2 = {
         8.3,
         5
     ],
-     "90": [
+    "90": [
         436.7,
         318.3,
         257.8,
@@ -3638,7 +3638,7 @@ const tabelle_2 = {
         8.1,
         4.7
     ],
-     "91": [
+    "91": [
         460,
         323.3,
         258.9,
@@ -3657,7 +3657,7 @@ const tabelle_2 = {
         7.7,
         4.3
     ],
-     "92": [
+    "92": [
         450,
         328.3,
         267.8,
@@ -3676,7 +3676,7 @@ const tabelle_2 = {
         8.1,
         5.1
     ],
-     "93": [
+    "93": [
         383.3,
         283.3,
         232.2,
@@ -3695,7 +3695,7 @@ const tabelle_2 = {
         7.7,
         5
     ],
-     "94": [
+    "94": [
         506.7,
         363.3,
         293.3,
@@ -3714,7 +3714,7 @@ const tabelle_2 = {
         11.4,
         7.2
     ],
-     "95": [
+    "95": [
         486.7,
         355,
         288.9,
@@ -3733,7 +3733,7 @@ const tabelle_2 = {
         8.5,
         5.3
     ],
-     "96": [
+    "96": [
         396.7,
         293.3,
         240,
@@ -3752,7 +3752,7 @@ const tabelle_2 = {
         7.1,
         3.9
     ],
-     "97": [
+    "97": [
         443.3,
         318.3,
         258.9,
@@ -3771,7 +3771,7 @@ const tabelle_2 = {
         5.8,
         3.7
     ],
-     "98": [
+    "98": [
         420,
         303.3,
         245.6,
@@ -3790,7 +3790,7 @@ const tabelle_2 = {
         8.1,
         5
     ],
-     "99": [
+    "99": [
         363.3,
         271.7,
         222.2,
@@ -3812,9 +3812,9 @@ const tabelle_2 = {
 }
 
 const haftungsausschluss = () => {
-    if(document.getElementById("haftungsausschluss").value === "ja"){
-       tabelle = tabelle_2;
-    } else if(document.getElementById("haftungsausschluss").value === "nein") {
+    if (document.getElementById("haftungsausschluss").value === "ja") {
+        tabelle = tabelle_2;
+    } else if (document.getElementById("haftungsausschluss").value === "nein") {
         tabelle = tabelle_1;
     }
 }
@@ -3825,7 +3825,7 @@ document.getElementById("haftungsausschluss").oninput = function() {
     start();
     console.log(tabelle)
 }
- 
+
 
 let dachfläche = document.getElementById("dachflaeche").value;
 let abflussBeiwert = document.getElementById("dachart").value;
@@ -3849,29 +3849,30 @@ const start = () => {
         }
         switch (passend) {
             case 40:
-                empfohlenerSchacht = 140; 
-                break; 
+                empfohlenerSchacht = 140;
+                break;
             case 140:
                 empfohlenerSchacht = 500;
-                break; 
+                break;
             case 190:
                 empfohlenerSchacht = 900;
-                break; 
+                break;
             case 200:
                 empfohlenerSchacht = 950;
-                break; 
+                break;
             case 320:
                 empfohlenerSchacht = 1000;
-                break; 
+                break;
             case 500:
-                empfohlenerSchacht = 2000;  
-                break; 
+                empfohlenerSchacht = 2000;
+                break;
         }
     }
-    if(document.getElementById("tank-wahl").value === "nein") {
+    if (document.getElementById("tank-wahl").value === "nein") {
         findBest(undurchlässigeFläche);
         document.getElementById("tank-wahl-input").setAttribute("disabled", "disabled")
-    } if(document.getElementById("tank-wahl").value === "ja") {
+    }
+    if (document.getElementById("tank-wahl").value === "ja") {
         empfohlenerSchacht = document.getElementById("tank-wahl-input").value;
         document.getElementById("tank-wahl-input").removeAttribute("disabled");
     }
@@ -3885,7 +3886,7 @@ const start = () => {
     const schachtHöhe = schacht[empfohlenerSchacht].schachtHöhe / 100;
     const zulaufUnten = schacht[empfohlenerSchacht].zulaufUnten / 100;
     const zulaufDurchmesser = schacht[empfohlenerSchacht].zulaufDurchmesser / 100;
-    const grubenTiefe = ((+schachtHöhe-zulaufUnten+(zulaufDurchmesser / 10)) + rigolenHöhe).toFixed(2);
+    const grubenTiefe = ((+schachtHöhe - zulaufUnten + (zulaufDurchmesser / 10)) + rigolenHöhe).toFixed(2);
 
     const speicherkoeffizient = 0.35;
     const zuschlagfaktor = 1.1;
@@ -3895,7 +3896,7 @@ const start = () => {
         const ol = undurchlässigeFläche * Math.pow(10, -7);
         const ul = rigolenBreite * rigolenHöhe * speicherkoeffizient / (60 * zuschlagfaktor);
         const ur = (rigolenBreite + rigolenHöhe / 2) * bodendurchlässigkeit / 2;
-        
+
         const rigolenLänge = (ol * regen) / (ul / minute + ur);
         const rigolenVolumen = rigolenLänge * rigolenBreite * rigolenHöhe;
 
@@ -3908,7 +3909,7 @@ const start = () => {
     for (let i = 0; i < minuten.length; i++) {
         const minute = minuten[i];
         const regen = tabelle[plz][i];
-        
+
         ergebnisse.push(calc(minute, regen))
     }
     const größteWerte = ergebnisse.reduce(function(a, b) {
@@ -3919,7 +3920,7 @@ const start = () => {
 
     const kiesVolumen = rigolenVolumen - (schachtVolumen / 2);
     const drainageKies = (kiesVolumen * 1.75).toFixed(1);
-    const geotextil = Math.floor(((2 * rigolenBreite * rigolenLänge + 2 * rigolenHöhe * rigolenBreite + 2 * rigolenHöhe * rigolenLänge)* 1.2) / 2.5) * 2.5;
+    const geotextil = Math.floor(((2 * rigolenBreite * rigolenLänge + 2 * rigolenHöhe * rigolenBreite + 2 * rigolenHöhe * rigolenLänge) * 1.2) / 2.5) * 2.5;
 
 
     document.getElementById("schacht").innerText = `Empfohlene Schachtgröße: ${empfohlenerSchacht}l`;
@@ -3960,9 +3961,13 @@ start();
 document.getElementById("dachflaeche").oninput = function() {
     dachfläche = document.getElementById("dachflaeche").value;
     undurchlässigeFläche = dachfläche * abflussBeiwert;
+    if (dachfläche >= 555) {
+        document.getElementById("alert").style.display = "block";
+    } else {
+        document.getElementById("alert").style.display = "none";
+    }
     start()
 };
-//why erst nach dem das Feld nicht mehr im Fokus ist?
 document.getElementById("plz-input").oninput = function() {
     plz = document.getElementById("plz-input").value.toString().substring(0, 2);
     start()
@@ -3986,16 +3991,16 @@ document.getElementById("breite-input").oninput = function() {
 }
 
 const kfWert = () => {
-        if(document.getElementById("kf-wert-bekannt").value === "ja") {
-            bodendurchlässigkeit = document.getElementById("kf-wert-input").value;
-            document.getElementById("bodenart").setAttribute("disabled", "disabled")
-            document.getElementById("kf-wert-input").removeAttribute("disabled")
-        } else if(document.getElementById("kf-wert-bekannt").value === "nein") {
-            bodendurchlässigkeit = document.getElementById("bodenart").value;
-            document.getElementById("kf-wert-input").setAttribute("disabled", "disabled")
-            document.getElementById("bodenart").removeAttribute("disabled")
-        }
-        start();
+    if (document.getElementById("kf-wert-bekannt").value === "ja") {
+        bodendurchlässigkeit = document.getElementById("kf-wert-input").value;
+        document.getElementById("bodenart").setAttribute("disabled", "disabled")
+        document.getElementById("kf-wert-input").removeAttribute("disabled")
+    } else if (document.getElementById("kf-wert-bekannt").value === "nein") {
+        bodendurchlässigkeit = document.getElementById("bodenart").value;
+        document.getElementById("kf-wert-input").setAttribute("disabled", "disabled")
+        document.getElementById("bodenart").removeAttribute("disabled")
+    }
+    start();
 }
 kfWert();
 
@@ -4005,10 +4010,10 @@ document.getElementById("kf-wert-bekannt").oninput = function() {
 }
 
 const breite = () => {
-    if(document.getElementById("manuelle-breite").value === "ja") {
+    if (document.getElementById("manuelle-breite").value === "ja") {
         rigolenBreite = document.getElementById("breite-input").value;
         document.getElementById("breite-input").removeAttribute("disabled")
-    } else if(document.getElementById("manuelle-breite").value === "nein") {
+    } else if (document.getElementById("manuelle-breite").value === "nein") {
         document.getElementById("breite-input").value = 3;
         document.getElementById("breite-input").setAttribute("disabled", "disabled")
     }

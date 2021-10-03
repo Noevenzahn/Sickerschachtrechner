@@ -17,6 +17,15 @@ body {
     margin-top: 100px;
 }
 
+@media only screen and (min-width: 900px) {
+    .rechner {
+        flex-direction: row;
+    }
+    .results {
+        margin: 0 0 0 70px;
+    }
+}
+
 .all-inputs,
 .results {
     max-width: 341px;
@@ -187,12 +196,13 @@ select:disabled#tank-wahl-input:focus {
 
 #plz-input,
 #kf-wert-input,
-#breite-input {
+#tank-wahl-input {
     width: 130px;
     text-align: center;
 }
 
 #breite-input {
+    width: 130px;
     padding-right: 60px;
     text-align: right;
 }
@@ -296,11 +306,11 @@ p {
     opacity: 1;
 }
 
-@media only screen and (min-width: 900px) {
-    .rechner {
-        flex-direction: row;
-    }
-    .results {
-        margin: 0 0 0 70px;
-    }
+#alert,
+a {
+    color: rgb(225, 88, 88);
+}
+
+#alert {
+    display: none;
 }
