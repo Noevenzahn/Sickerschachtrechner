@@ -53,6 +53,16 @@ body {
     background-color: var(--blue);
     box-sizing: border-box;
 }
+#dachflaeche,
+.dachflaeche-input-group {
+    width: 242px;
+}
+
+.small-input-group {
+    padding-left: 0;
+    margin-top: 0;
+    position: relative;
+}
 
 .number-input {
     width: 281px;
@@ -88,15 +98,6 @@ input {
 }
 
 .fläche {
-    font-size: 30px;
-    color: #fff;
-}
-
-.small-input-group {
-    position: relative;
-}
-
-.fläche-small {
     position: absolute;
     font-size: 30px;
     color: #fff;

@@ -3873,7 +3873,7 @@ const start = () => {
         document.getElementById("tank-wahl-input").setAttribute("disabled", "disabled")
     }
     if (document.getElementById("tank-wahl").value === "ja") {
-        empfohlenerSchacht = document.getElementById("tank-wahl-input").value;
+        empfohlenerSchacht = parseInt(document.getElementById("tank-wahl-input").value, 10);
         document.getElementById("tank-wahl-input").removeAttribute("disabled");
     }
 

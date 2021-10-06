@@ -13,99 +13,119 @@
 <body>
     <div class="rechner">
         <div class="all-inputs">
-            <span id="alert">Für Anfragen über 555m<sup>2</sup> Dachfläche nutzen Sie gerne unser <a href="#">Kontaktformular</a> oder <a href="#">rufen Sie uns an</a>.</span>
-            <div class="number-input-group">
-                <input id="dachflaeche" class="number-input" type="number" placeholder="Grundfläche" pattern="[0-9]*" inputmode="numeric" value="" min="0" max="555" autocomplete="off">
-                <span class="fläche">m<sup>2</sup></span>
+            <span id="alert">Für Anfragen über 555m<sup>2</sup> Dachfläche nutzen Sie gerne unser <a
+                    href="#">Kontaktformular</a> oder <a href="#">rufen Sie uns an</a>.</span>
+            
+                <div class="input-text-group">
+                    <div class="tooltip">
+                        <p>Grundfläche Gebäude<img src="Bilder/info.svg" alt="" class="info-icon"><span
+                                class="tooltiptext">Erklärung zu diesem Input folgt hier. Erklärung zu diesem Input folgt
+                                hier. Erklärung zu diesem Input folgt hier.</span></p>
+                </div>
+                <div class="small-input-group number-input-group">
+                    <input id="dachflaeche" class="number-input" type="number"placeholder="Grundfläche" pattern="[0-9]*" inputmode="numeric" value="" min="0" max="555" autocomplete="off">
+                    <span class="fläche">m<sup>2</sup></span>
+                </div>
             </div>
             <div class="select-wrapper">
                 <select id="dachart" class="dachartselect">
-          <option value="0.95">Schrägdach Metall, Glas, Schiefer, Faserzement</option>
-          <option value="0.9">Schrägdach Ziegel, Dachpappe</option>
-          <option value="0.95">Flachdach Metall, Glas, Faserzement</option>
-          <option value="0.9" selected="selected">Flachdach Dachpappe</option>
-          <option value="0.7">Flachdach Kies</option>
-          <option value="0.5">Gründach humusiert < 10 cm Aufbau</option>
-          <option value="0.3">Gründach humusiert > 10 cm Aufbau</option>
-          <option value="0.9">Asphalt, fugenloser Beton</option>
-          <option value="0.75">Pflaster mit dichten Fugen</option>
-          <option value="0.5">Pflaster mit offenen Fugen</option>
-          <option value="0.25">Verbundsteine mit Fugen, Sickersteine</option>
-        </select>
+                    <option value="0.95">Schrägdach Metall, Glas, Schiefer, Faserzement</option>
+                    <option value="0.9">Schrägdach Ziegel, Dachpappe</option>
+                    <option value="0.95">Flachdach Metall, Glas, Faserzement</option>
+                    <option value="0.9" selected="selected">Flachdach Dachpappe</option>
+                    <option value="0.7">Flachdach Kies</option>
+                    <option value="0.5">Gründach humusiert < 10 cm Aufbau</option>
+                    <option value="0.3">Gründach humusiert > 10 cm Aufbau</option>
+                    <option value="0.9">Asphalt, fugenloser Beton</option>
+                    <option value="0.75">Pflaster mit dichten Fugen</option>
+                    <option value="0.5">Pflaster mit offenen Fugen</option>
+                    <option value="0.25">Verbundsteine mit Fugen, Sickersteine</option>
+                </select>
             </div>
             <div class="input-text-group">
                 <div class="tooltip">
-                    <p>kf-Wert bekannt?<img src="Bilder/info.svg" alt="" class="info-icon"><span class="tooltiptext">Erklärung zu diesem Input folgt hier. Erklärung zu diesem Input folgt hier. Erklärung zu diesem Input folgt hier.</span></p>
+                    <p>kf-Wert bekannt?<img src="Bilder/info.svg" alt="" class="info-icon"><span
+                            class="tooltiptext">Erklärung zu diesem Input folgt hier. Erklärung zu diesem Input folgt
+                            hier. Erklärung zu diesem Input folgt hier.</span></p>
                 </div>
                 <div class="select-wrapper-small">
                     <select id="kf-wert-bekannt" class="ja-nein">
-            <option value="ja">ja</option>
-            <option value="nein" selected="selected">nein</option>
-          </select>
+                        <option value="ja">ja</option>
+                        <option value="nein" selected="selected">nein</option>
+                    </select>
                 </div>
-                <input id="kf-wert-input" class="number-input" type="number" pattern="[0-9]*" inputmode="numeric" value="0.0005" min="0" autocomplete="off">
+                <input id="kf-wert-input" class="number-input" type="number" pattern="[0-9]*" inputmode="numeric"
+                    value="0.0005" min="0" autocomplete="off">
             </div>
             <div class="input-text-group">
                 <div class="tooltip">
-                    <p>Manuelle Gruben-Breite?<img src="Bilder/info.svg" alt="" class="info-icon"><span class="tooltiptext">Erklärung zu diesem Input folgt hier. Erklärung zu diesem Input folgt hier. Erklärung zu diesem Input folgt hier.</span></p>
+                    <p>Manuelle Gruben-Breite?<img src="Bilder/info.svg" alt="" class="info-icon"><span
+                            class="tooltiptext">Erklärung zu diesem Input folgt hier. Erklärung zu diesem Input folgt
+                            hier. Erklärung zu diesem Input folgt hier.</span></p>
                 </div>
                 <div class="select-wrapper-small">
                     <select id="manuelle-breite" class="ja-nein">
-            <option value="nein" selected="selected">nein</option>
-            <option value="ja">ja</option>
-          </select>
+                        <option value="nein" selected="selected">nein</option>
+                        <option value="ja">ja</option>
+                    </select>
                 </div>
                 <div class="small-input-group">
-                    <input id="breite-input" class="number-input" type="number" pattern="[0-9]*" inputmode="numeric" value="3" min="0" autocomplete="off">
-                    <span class="fläche-small">m<sup>2</sup></span>
+                    <input id="breite-input" class="number-input" type="number" pattern="[0-9]*" inputmode="numeric"
+                        value="3" min="0" autocomplete="off">
+                    <span class="fläche">m<sup>2</sup></span>
                 </div>
             </div>
             <div class="input-text-group">
                 <div class="tooltip">
-                    <p>Manueller Tank?<img src="Bilder/info.svg" alt="" class="info-icon"><span class="tooltiptext">Erklärung zu diesem Input folgt hier. Erklärung zu diesem Input folgt hier. Erklärung zu diesem Input folgt hier.</span></p>
+                    <p>Manueller Tank?<img src="Bilder/info.svg" alt="" class="info-icon"><span
+                            class="tooltiptext">Erklärung zu diesem Input folgt hier. Erklärung zu diesem Input folgt
+                            hier. Erklärung zu diesem Input folgt hier.</span></p>
                 </div>
                 <div class="select-wrapper-small">
                     <select id="tank-wahl" class="ja-nein">
-            <option value="ja">ja</option>
-            <option value="nein" selected="selected">nein</option>
-          </select>
+                        <option value="ja">ja</option>
+                        <option value="nein" selected="selected">nein</option>
+                    </select>
                 </div>
                 <div class="select-wrapper-small">
                     <select id="tank-wahl-input" class="ja-nein">
-            <option value="140">140l</option>
-            <option value="500">500l</option>
-            <option value="900">900l</option>
-            <option value="950">950l</option>
-            <option value="1000">1000l</option>
-            <option value="2000">2000l</option>
-          </select>
+                        <option value="140">140l</option>
+                        <option value="500">500l</option>
+                        <option value="900">900l</option>
+                        <option value="950">950l</option>
+                        <option value="1000">1000l</option>
+                        <option value="2000">2000l</option>
+                    </select>
                 </div>
             </div>
 
             <div class="select-wrapper">
                 <select id="bodenart" class="dachartselect">
-          <option value="0.0005">Grobsand (0,0005)</option>
-          <option value="0.0001">Mittelsand (0,0001)</option>
-          <option value="0.00005">Feinsand (0,00005)</option>
-          <option value="0.00001">lehmiger Sand (0,00001)</option>
-        </select>
+                    <option value="0.0005">Grobsand (0,0005)</option>
+                    <option value="0.0001">Mittelsand (0,0001)</option>
+                    <option value="0.00005">Feinsand (0,00005)</option>
+                    <option value="0.00001">lehmiger Sand (0,00001)</option>
+                </select>
             </div>
             <p class="kf-unbekannt">(Nur nötig, wenn kf-Wert unbekannt)</p>
 
             <div class="plz">
                 <span id="plz-text">PLZ:</span>
-                <input id="plz-input" class="number-input" type="number" name="postleitzahl" pattern="[0-9]*" inputmode="numeric" value="19057" min="0" autocomplete="off">
+                <input id="plz-input" class="number-input" type="number" name="postleitzahl" pattern="[0-9]*"
+                    inputmode="numeric" value="19057" min="0" autocomplete="off">
             </div>
 
             <div class="input-text-group">
                 <div class="tooltip">
-                    <p>Sollen nahe Gebäude möglichst geschützt sein?<img src="Bilder/info.svg" alt="" class="info-icon"><span class="tooltiptext">Erklärung zu diesem Input folgt hier. Erklärung zu diesem Input folgt hier. Erklärung zu diesem Input folgt hier.</span></p>
+                    <p>Sollen nahe Gebäude möglichst geschützt sein?<img src="Bilder/info.svg" alt=""
+                            class="info-icon"><span class="tooltiptext">Erklärung zu diesem Input folgt hier. Erklärung
+                            zu diesem Input folgt hier. Erklärung zu diesem Input folgt hier.</span></p>
                 </div>
                 <div class="select-wrapper-small">
                     <select id="haftungsausschluss" class="ja-nein">
-            <option value="ja">ja</option>
-            <option value="nein" selected="selected">nein</option>
-          </select>
+                        <option value="ja">ja</option>
+                        <option value="nein" selected="selected">nein</option>
+                    </select>
                 </div>
             </div>
         </div>
