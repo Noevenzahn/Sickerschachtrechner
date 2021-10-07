@@ -56,6 +56,8 @@ body {
 #dachflaeche,
 .dachflaeche-input-group {
     width: 242px;
+    padding-right: 70px;
+    text-align: right;
 }
 
 .small-input-group {
