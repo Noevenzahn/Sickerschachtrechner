@@ -39,9 +39,9 @@ body {
 
 .input-description {
     display: block;
-    font-size: 25px;
+    font-size: 24px;
     font-weight: bold;
-    margin: 25px 0px 5px 0px;
+    margin: 25px 0px 5px 0;
     width: 341px;
 }
 
@@ -186,8 +186,10 @@ select:disabled#bodenart:focus,
 select:disabled#tank-wahl-input,
 select:disabled#tank-wahl-input:hover,
 select:disabled#tank-wahl-input:active,
-select:disabled#tank-wahl-input:focus {
+select:disabled#tank-wahl-input:focus,
+input:disabled + span.fläche {
     cursor: not-allowed;
+    color: var(--grey);
     background-color: var(--grey);
 }
 
@@ -221,6 +223,10 @@ select:disabled#tank-wahl-input:focus {
     font-size: 30px;
     font-weight: bold;
     margin-right: 25px;
+}
+
+.text-group .input-description {
+    margin: 0;
 }
 
 .input-text-group {
