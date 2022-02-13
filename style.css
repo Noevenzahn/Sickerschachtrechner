@@ -1,178 +1,172 @@
-:root,
-html,
-body {
-    --blue: #0A4A88;
-    --grey: #C6C6C6;
-    font-family: neue-kabel, sans-serif;
-}
-
 .rechner {
-    font-family: neue-kabel, sans-serif;
-    --blue: #0A4A88;
-    --grey: #C6C6C6;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 100px;
+  font-family: neue-kabel, sans-serif;
+  --blue: #0a4a88;
+  --grey: #c6c6c6;
+  --width: 341px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
 }
 
 @media only screen and (min-width: 900px) {
-    .rechner {
-        flex-direction: row;
-    }
-    .results {
-        margin: 0 0 0 70px;
-    }
+  .rechner {
+    flex-direction: row;
+  }
+  .results {
+    margin: 0 0 0 70px;
+  }
 }
 
 .all-inputs,
 .results {
-    max-width: 341px;
+  max-width: var(--width);
 }
 
 .input-group {
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
 }
 
 .input-description {
-    display: block;
-    font-size: 24px;
-    font-weight: bold;
-    margin: 25px 0px 5px 0;
-    width: 341px;
+  display: block;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 25px 0px 5px 0;
+  width: var(--width);
 }
 
 .number-input-group {
-    width: 341px;
-    height: 60px;
-    margin-top: 12px;
-    padding-left: 5px;
-    background-color: var(--blue);
-    box-sizing: border-box;
+  width: var(--width);
+  height: 60px;
+  margin-top: 12px;
+  padding-left: 5px;
+  background-color: var(--blue);
+  box-sizing: border-box;
 }
 #dachflaeche,
 .dachflaeche-input-group {
-    width: 242px;
-    padding-right: 70px;
-    text-align: right;
+  width: 242px;
+  padding-right: 70px;
+  text-align: right;
 }
 
 .small-input-group {
-    padding-left: 0;
-    margin-top: 0;
-    position: relative;
+  padding-left: 0;
+  margin-top: 0;
+  position: relative;
 }
 
 .number-input {
-    width: 281px;
-    height: 60px;
-    padding: 0 15px;
-    background-color: var(--blue);
+  width: 281px;
+  height: 60px;
+  padding: 0 15px;
+  background-color: var(--blue);
 }
 
 .number-input::placeholder {
-    color: #8B96B5;
+  color: #8b96b5;
 }
 
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
-input[type=number] {
-    -moz-appearance: textfield;
+input[type="number"] {
+  -moz-appearance: textfield;
 }
 
 input {
-    padding: 0 15px 0 15px;
-    background-color: var(--blue);
-    font-family: neue-kabel, sans-serif;
-    font-size: 30px;
-    color: #fff;
-    border: none;
-    outline: none;
-    box-sizing: border-box;
+  padding: 0 15px 0 15px;
+  background-color: var(--blue);
+  font-family: neue-kabel, sans-serif;
+  font-size: 30px;
+  color: #fff;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
 }
 
 .fläche {
-    position: absolute;
-    font-size: 30px;
-    color: #fff;
-    right: 15px;
-    top: 6px;
+  position: absolute;
+  font-size: 30px;
+  color: #fff;
+  right: 15px;
+  top: 6px;
 }
 
 #dachart,
 #bodenart {
-    width: 341px;
-    height: 60px;
-    margin-top: 12px;
-    padding: 0 15px 0 15px;
-    background-color: var(--blue);
-    font-family: neue-kabel, sans-serif;
-    font-size: 1.7rem;
-    color: #fff;
-    border: none;
-    box-sizing: border-box;
+  width: var(--width);
+  height: 60px;
+  margin-top: 12px;
+  padding: 0 15px 0 15px;
+  background-color: var(--blue);
+  font-family: neue-kabel, sans-serif;
+  font-size: 1.7rem;
+  color: #fff;
+  border: none;
+  box-sizing: border-box;
 }
 
 select {
-    -webkit-appearance: none;
-    -webkit-border-radius: 0;
-    border-radius: 0;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  border-radius: 0;
 }
 
 .select-wrapper,
 .select-wrapper-small {
-    position: relative;
+  position: relative;
 }
 
 .select-wrapper::after {
-    content: '';
-    background-color: var(--blue);
-    width: 40px;
-    height: 60px;
-    position: absolute;
-    right: 0;
-    top: 12px;
-    pointer-events: none;
+  content: "";
+  background-color: var(--blue);
+  width: 40px;
+  height: 60px;
+  position: absolute;
+  right: 0;
+  top: 12px;
+  pointer-events: none;
 }
 
 .select-wrapper::before,
 .select-wrapper-small::before {
-    content: '';
-    position: absolute;
-    top: 34px;
-    right: 15px;
-    width: 8px;
-    height: 8px;
-    border-bottom: 3px solid #fff;
-    border-left: 3px solid #fff;
-    transform: rotate(315deg);
-    z-index: 999;
-    pointer-events: none;
+  content: "";
+  position: absolute;
+  top: 34px;
+  right: 15px;
+  width: 8px;
+  height: 8px;
+  border-bottom: 3px solid #fff;
+  border-left: 3px solid #fff;
+  transform: rotate(315deg);
+  z-index: 999;
+  pointer-events: none;
 }
 
 .select-wrapper-small::before {
-    top: 22px;
+  top: 22px;
 }
 
 .ja-nein {
-    width: 100px;
-    height: 60px;
-    padding: 0 15px 0 10px;
-    margin-left: 10px;
-    background-color: var(--blue);
-    font-family: neue-kabel, sans-serif;
-    font-size: 1.7rem;
-    color: #fff;
-    border: none;
-    box-sizing: border-box;
+  width: 100px;
+  height: 60px;
+  padding: 0 15px 0 10px;
+  margin-left: 10px;
+  background-color: var(--blue);
+  font-family: neue-kabel, sans-serif;
+  font-size: 1.7rem;
+  color: #fff;
+  border: none;
+  box-sizing: border-box;
 }
 
 input:disabled.number-input,
@@ -188,138 +182,178 @@ select:disabled#tank-wahl-input:hover,
 select:disabled#tank-wahl-input:active,
 select:disabled#tank-wahl-input:focus,
 input:disabled + span.fläche {
-    cursor: not-allowed;
-    color: var(--grey);
-    background-color: var(--grey);
+  cursor: not-allowed;
+  color: var(--grey);
+  background-color: var(--grey);
 }
 
 #dachart option,
 #bodenart option,
 .ja-nein option {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 #plz-input,
 #kf-wert-input,
 #tank-wahl-input {
-    width: 130px;
-    text-align: center;
+  width: 130px;
+  text-align: center;
 }
 
 #breite-input {
-    width: 130px;
-    padding-right: 60px;
-    text-align: right;
+  width: 130px;
+  padding-right: 60px;
+  text-align: right;
 }
 
 .plz {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 12px;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 12px;
 }
 
 #plz-text {
-    align-self: center;
-    font-size: 30px;
-    font-weight: bold;
-    margin-right: 25px;
+  align-self: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin-right: 25px;
 }
 
 .text-group .input-description {
-    margin: 0;
+  margin: 0;
 }
 
 .input-text-group {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-top: 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 12px;
 }
 
 .input-text-group p {
-    margin: 0;
+  margin: 0;
 }
 
 #kf-wert-input,
 #breite-input,
 #tank-wahl-input {
-    margin-left: 12px;
-    width: 130px;
+  margin-left: 12px;
+  width: 130px;
 }
 
 p {
-    font-size: 1.1rem;
-    line-height: 1.2rem;
-    margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.2rem;
+  margin: 0;
 }
 
 .kf-unbekannt {
-    margin: 10px 0 25px 0;
-    width: 341px;
+  margin: 10px 0 25px 0;
+  width: var(--width);
 }
 
 .results {
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
 }
 
 .results p {
-    line-height: 1.7rem;
+  line-height: 1.7rem;
 }
 
 #result-image {
-    margin: 20px 0px 25px;
-    width: 100px;
+  margin: 20px 0px 25px;
+  width: 100px;
 }
 
 .info-icon {
-    width: 12px;
-    margin: 0 5px;
+  width: 12px;
+  margin: 0 5px;
 }
 
 .tooltip {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 
 .tooltip .tooltiptext {
-    visibility: hidden;
-    width: 200px;
-    background-color: black;
-    color: #fff;
-    padding: 15px;
-    position: absolute;
-    z-index: 9999;
-    top: 110%;
-    left: 50%;
-    margin-left: -45px;
-    opacity: 0;
-    transition: opacity 300ms;
+  visibility: hidden;
+  width: 200px;
+  background-color: black;
+  color: #fff;
+  padding: 15px;
+  position: absolute;
+  z-index: 9999;
+  top: 110%;
+  left: 50%;
+  margin-left: -45px;
+  opacity: 0;
+  transition: opacity 300ms;
 }
 
 .tooltip .tooltiptext::after {
-    content: "";
-    position: absolute;
-    bottom: 100%;
-    left: 20%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: transparent transparent black transparent;
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 20%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
 }
 
 .tooltip:hover .tooltiptext {
-    visibility: visible;
-    opacity: 1;
+  visibility: visible;
+  opacity: 1;
 }
 
 #alert,
 a {
-    color: rgb(225, 88, 88);
+  color: rgb(225, 88, 88);
 }
 
 #alert {
-    display: none;
+  display: none;
+}
+
+@media only screen and (max-width: 370px) {
+  .rechner {
+    --width: 300px;
+    margin: 20px 0;
+  }
+  p {
+    font-size: 16px;
+    line-height: 1.2rem;
+    margin: 0;
+  }
+  .number-input,
+  #dachart,
+  #bodenart,
+  .fläche,
+  .ja-nein {
+    font-size: 23px;
+  }
+  .fläche {
+    top: 10px;
+  }
+  #dachflaeche {
+    padding-right: 60px;
+    width: 200px;
+  }
+  #kf-wert-input,
+  #breite-input,
+  #tank-wahl-input {
+    width: 120px;
+  }
+  .ja-nein {
+    width: 90px;
+  }
+  .input-description {
+    font-size: 21px;
+  }
+  #plz-text {
+    font-size: 25px;
+  }
 }
